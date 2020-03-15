@@ -1,0 +1,12 @@
+.App {
+  flex: 1 100%;
+}
+
+body > #root > div {
+  height: 100vh;
+}
+
+.div {
+  padding: 5rem 10rem;
+  margin-left: 10rem;
+}
