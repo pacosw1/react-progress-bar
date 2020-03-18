@@ -1,0 +1,23 @@
+.progress-div {
+  background-color: rgb(233, 233, 233);
+  border-radius: 0.2rem;
+}
+
+.progress {
+  background: rgb(86, 132, 206);
+
+  height: 10px;
+  background-color: gradient();
+  border-radius: 0rem;
+  transition: 1s ease;
+  transition-delay: 0.5s;
+  border-radius: 0.2rem;
+}
+
+.progressComp h1 {
+  font-size: 10px;
+}
+
+.percent-number {
+  color: rgb(121, 121, 121);
+}

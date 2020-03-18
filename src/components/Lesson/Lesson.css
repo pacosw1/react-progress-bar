@@ -1,0 +1,94 @@
+.lesson {
+  border: 0px solid;
+  flex: 1 100%;
+  display: flex;
+  /* flex: 1 100%; */
+}
+
+div {
+}
+.editor {
+  padding-left: 5px;
+  padding: 5px 10px;
+  border: 0px dotted;
+  flex: 1 25% !important;
+  box-shadow: 2px 4px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+}
+
+.output * {
+  margin: 0;
+}
+
+.output {
+  margin-top: 3px;
+  border-top: 1px dotted;
+  flex: 1 100%;
+  display: flex;
+  flex-direction: column;
+
+  border-left: none;
+  border-color: rgb(200, 200, 200);
+}
+
+.out-title {
+  font-weight: 900;
+  font-size: 12px;
+  font-family: "Futura";
+  margin: 3px 0;
+}
+.output-res {
+  background-color: #f6f6f6;
+  min-height: 16vh;
+  border: 1px solid;
+  border-color: rgb(216, 216, 216);
+  max-height: 16vh;
+  border-radius: 0.2rem;
+
+  padding: 0.2rem 0px;
+  overflow-y: scroll;
+}
+
+.out {
+  margin: 0.5px 10px;
+}
+.output-p {
+  color: rgb(11, 172, 131);
+  background-color: transparent;
+}
+.error-p {
+  color: rgb(235, 75, 75);
+  background-color: transparent;
+}
+.lecture h1,
+p {
+  margin: 0;
+}
+
+.lecture h1 {
+  margin-bottom: 8px;
+}
+.lecture {
+  font-size: 15px;
+  padding: 10px 40px;
+  text-align: justify;
+  flex: 1 75%;
+  overflow-y: scroll;
+  margin: 0;
+  font-family: "Futura";
+  font-weight: 500;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.btns * {
+  margin: 1px 5px;
+  margin-left: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.bug * {
+  margin: 0;
+}

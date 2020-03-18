@@ -1,0 +1,50 @@
+.button {
+  width: 90px;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 0.2rem;
+
+  transition: 1s ease;
+
+  outline-style: none;
+}
+
+.primary {
+  background: rgb(20, 206, 150);
+  color: white;
+  border: none;
+}
+
+.primary-outline {
+  background-color: transparent;
+  color: rgb(20, 206, 150);
+  border: 1px solid;
+  border-color: rgb(20, 206, 150);
+}
+
+.secondary {
+  background: rgb(28, 122, 151);
+  color: white;
+}
+.secondary-outline {
+  border: 1px solid;
+  color: rgb(28, 122, 151);
+  border-color: rgb(28, 122, 151);
+}
+.danger-outline {
+  background-color: transparent;
+  color: rgb(219, 12, 12);
+
+  border: 1px solid;
+  border-color: rgb(219, 12, 12);
+}
+
+.danger {
+  background: rgb(219, 12, 12);
+  color: white;
+}
+.button:hover {
+  transform: scale(1.05);
+  outline-color: green;
+}

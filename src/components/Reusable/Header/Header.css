@@ -1,0 +1,19 @@
+.header {
+  border-color: rgb(226, 226, 226);
+  justify-content: space-between;
+  min-height: 50px;
+  align-items: center;
+  display: flex;
+}
+
+.header * {
+  margin: 3px 15px;
+}
+
+.left-side {
+  display: flex;
+  align-items: baseline;
+}
+.right-side {
+  display: flex;
+}

@@ -10,7 +10,8 @@ export var ProgressBar = ({ width, percent }) => {
   });
 
   return (
-    <div>
+    <div className={"progressComp"}>
+      <h1 className="percent-number">{percent * 100}% Completed</h1>
       <div className="progress-div" style={{ width: width }}>
         <div style={{ width: `${value}px` }} className="progress" />
       </div>
