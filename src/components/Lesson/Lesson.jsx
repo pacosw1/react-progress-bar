@@ -12,8 +12,9 @@ import "ace-builds/webpack-resolver";
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/ext-language_tools";
 import "ace-builds/src-noconflict/mode-javascript";
-
+import "ace-builds/src-noconflict/ext-searchbox";
 import "ace-builds/src-noconflict/theme-tomorrow";
+import ReactHtmlParser from "react-html-parser";
 
 class Lesson extends React.Component {
   state = {
@@ -50,7 +51,8 @@ class Lesson extends React.Component {
 
   render() {
     let { data, type } = this.state.result;
-
+    var component =
+      "<h1><strong>Data Structures</strong></h1><p>Today we will be learning about array.&nbsp;<strong>The fundamental&nbsp;data structure&nbsp;</strong>in computer science.</p><p>&nbsp;</p><p>&nbsp;</p> <p>&nbsp;</p><p>&nbsp;</p><p>Arrays are used to hold data in a consecutive order. A spot is reserved for each value in an array. Let&#39;s say you are going to a movie theater. Only one person can fit in each sit. And they must be in order. Each row in the theater represent an array.&nbsp;</p><p>&nbsp;</p>";
     var renderOutput = data.map((item, index) => {
       if (type === "error" && item.type != "warning")
         return (
@@ -68,25 +70,17 @@ class Lesson extends React.Component {
 
     return (
       <div className="lesson">
-        <div className="lecture split">
-          <h1>Arrays</h1>
-          Today we will learn about arrays. Arrays are the first data structures
-          people usally learn.
-          <br />
-          <br />
-          That's because they are the foundation to all the other data
-          structures. Arrays can be used for a wide variety of things.
-        </div>
+        <div className="lecture split">{ReactHtmlParser(component)}</div>
         <div className="editor">
           <div className="btns">
             <div>
+              <Button text="Live" width={200} style="danger-outline" />
               <Button
                 onClick={() => this.run()}
                 text="Run Code"
                 width={200}
                 style="primary-outline"
               />
-              <Button text="Stop Code" width={200} style="danger-outline" />
             </div>
             <div className="bug">
               <Button
@@ -100,7 +94,7 @@ class Lesson extends React.Component {
 
           <AceEditor
             width={"500px"}
-            height={"460px"}
+            height={"425px"}
             mode="javascript"
             theme="tomorrow"
             value={this.state.code}
@@ -109,7 +103,7 @@ class Lesson extends React.Component {
             setOptions={{
               enableBasicAutocompletion: true,
               enableLiveAutocompletion: true,
-              enableSnippets: true,
+              enableSnippets: false,
               showLineNumbers: true,
               wrap: true,
               tabSize: 2

@@ -75,12 +75,13 @@ p {
   flex: 1 75%;
   overflow-y: scroll;
   margin: 0;
-  font-family: "Futura";
-  font-weight: 500;
+  /* font-family: "Futura"; */
 }
 
 .btns {
   display: flex;
+  flex-direction: row;
+
   justify-content: space-between;
 }
 .btns * {

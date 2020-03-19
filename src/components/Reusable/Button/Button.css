@@ -10,19 +10,62 @@
   outline-style: none;
 }
 
+.pre {
+  font-size: 10px;
+}
+
 .primary {
-  background: rgb(20, 206, 150);
+  background-color: rgb(20, 206, 150);
   color: white;
   border: none;
+}
+
+.third-outline {
+  border: 0px solid;
+  color: rgb(134, 134, 134);
+
+  color: linear-gradient(
+    90deg,
+    rgba(97, 17, 189, 1) 0%,
+    rgba(97, 17, 189, 0.7133228291316527) 0%,
+    rgba(97, 17, 189, 0.6320903361344538) 100%
+  );
 }
 
 .primary-outline {
   background-color: transparent;
   color: rgb(20, 206, 150);
+
   border: 1px solid;
   border-color: rgb(20, 206, 150);
 }
+.half {
+  width: 49%;
+  margin: 0;
+}
 
+.dual {
+  display: flex;
+  border: 0px solid;
+  margin: 5px 0;
+
+  justify-content: space-between;
+}
+
+.locked {
+  background-color: rgb(179, 179, 179);
+  color: white;
+}
+
+.options {
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+}
+.full {
+  margin: 0;
+  width: 100%;
+}
 .secondary {
   background: rgb(28, 122, 151);
   color: white;

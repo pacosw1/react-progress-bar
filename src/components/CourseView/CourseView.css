@@ -1,0 +1,22 @@
+.course-view {
+  display: flex;
+  border: 0px solid;
+  flex: 1 100%;
+}
+
+.course-view div {
+  margin: 5px 10px;
+  border: 1px solid;
+  border-color: rgb(185, 185, 185);
+  border-radius: 0.4rem;
+}
+
+.updates {
+  flex: 1 50%;
+}
+.grades {
+  flex: 1 50%;
+}
+.assigments {
+  flex: 1 50%;
+}

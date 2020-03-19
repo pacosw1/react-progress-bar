@@ -1,0 +1,35 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  border: 0px solid;
+  flex: 1 100%;
+  align-content: center;
+  justify-content: center;
+
+  align-items: center;
+}
+
+.catalog .card {
+  margin: 10px;
+}
+
+.container {
+  width: 84%;
+  display: flex;
+
+  flex-wrap: wrap;
+}
+.phase {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+  align-items: center;
+}
+.phase .header {
+  transform: translate(125px);
+  margin: 0;
+  color: rgb(75, 75, 75);
+  align-self: flex-start;
+  font-weight: 900;
+  font-family: monospace;
+}

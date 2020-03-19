@@ -1,17 +1,22 @@
 .progress-div {
   background-color: rgb(233, 233, 233);
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
 }
 
 .progress {
-  background: rgb(86, 132, 206);
+  background: rgb(24, 204, 147);
+  background: linear-gradient(
+    90deg,
+    rgba(24, 204, 147, 1) 0%,
+    rgba(24, 204, 147, 0.6264880952380952) 52%,
+    rgba(24, 204, 147, 0.4332107843137255) 100%
+  );
 
   height: 10px;
-  background-color: gradient();
-  border-radius: 0rem;
   transition: 1s ease;
   transition-delay: 0.5s;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
+  margin: 0;
 }
 
 .progressComp h1 {

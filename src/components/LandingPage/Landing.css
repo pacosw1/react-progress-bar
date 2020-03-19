@@ -1,0 +1,16 @@
+.landing {
+  padding: 10px 20px;
+  border: 0px solid;
+  flex: 1 100%;
+  /* height: inherit; */
+}
+
+.landing .left {
+  width: 40%;
+}
+
+.landing .left p {
+  font-weight: 300;
+  text-align: justify;
+  font-size: 21px;
+}
