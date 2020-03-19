@@ -9,6 +9,7 @@ import { Landing } from "./components/LandingPage/Landing";
 import { TextEditor } from "./components/Editor/TextEditor";
 import { CourseView } from "./components/CourseView/CourseView";
 import { Catalog } from "./components/Catalog/Catalog";
+import { Test } from "./components/Test/Test";
 
 class App extends React.Component {
   state = {
@@ -189,7 +190,38 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar />
-        <Catalog courses={this.state.courses} />
+        <Test
+          title="Quiz 1: Data Structures"
+          test={[
+            {
+              text: "How old were you when you started dating?",
+              id: 0,
+              options: [
+                { id: 0, text: "When I was 10 years old", checked: false },
+                { id: 1, text: "When i was 20 years old", checked: false },
+                { id: 2, text: "When I was born", checked: false }
+              ]
+            },
+            {
+              text: "How old were you when you started dating?",
+              id: 1,
+              options: [
+                { id: 0, text: "When I was 10 years old", checked: false },
+                { id: 1, text: "When i was 20 years old", checked: false },
+                { id: 2, text: "When I was born", checked: false }
+              ]
+            },
+            {
+              text: "How old were you when you started dating?",
+              id: 2,
+              options: [
+                { id: 0, text: "When I was 10 years old", checked: false },
+                { id: 1, text: "When i was 20 years old", checked: false },
+                { id: 2, text: "When I was born", checked: false }
+              ]
+            }
+          ]}
+        />
       </div>
     );
   }
