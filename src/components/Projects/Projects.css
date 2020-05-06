@@ -1,0 +1,34 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  border: 0px solid;
+  flex: 1 100%;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.tit {
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Georgia";
+}
+
+br {
+  width: 500px !important;
+  border: 1px solid !important;
+  border-color: black;
+}
+.p-list {
+  display: flex;
+  border: 0px solid;
+  width: 81.5%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  flex-wrap: wrap;
+}
+
+.projects .card {
+  margin: 10px;
+}

@@ -1,0 +1,26 @@
+.preview {
+  /* background-color: green; */
+  display: flex !important;
+  flex: 1 100%;
+  flex-direction: column;
+  height: 150px;
+  width: 230px;
+  justify-items: center;
+  /* align-items: center; */
+}
+
+.preview .title {
+  font-size: 25px;
+  margin: 0;
+  font-family: "Georgia";
+  font-weight: 900;
+}
+
+.preview .description {
+  padding-top: 0.5rem;
+  color: #7a7a7a;
+  font-family: "Futura";
+  font-weight: 500;
+  font-size: 14px !important;
+  /* text-align: justify; */
+}

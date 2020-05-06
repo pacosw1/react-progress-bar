@@ -1,33 +1,37 @@
 import "./Sidebar.css";
 import React from "react";
-import { ProgressBar } from "../ProgressBar/ProgressBar";
 
-export const Sidebar = ({ width, children }) => {
-  const [currentWidth, setWidth] = React.useState(0);
+export const Sidebar = ({ width, height, children }) => {
+  const [xPosition, setX] = React.useState(-width);
 
   const toggleMenu = () => {
-    if (currentWidth < 0) {
-      setWidth(0);
+    if (xPosition < 0) {
+      setX(0);
     } else {
-      setWidth(-width);
+      setX(-width);
     }
   };
+
   React.useEffect(() => {
-    setWidth(currentWidth);
-  });
+    setX(0);
+  }, []);
   return (
     <React.Fragment>
       <div
         className="side-bar"
-        style={{ transform: `translatex(${currentWidth}px)`, width: 300 }}
+        style={{
+          transform: `translatex(${xPosition}px)`,
+          width: width,
+          minHeight: height
+        }}
       >
-        {/* <button
+        <button
           onClick={() => toggleMenu()}
           className="toggle-menu"
           style={{
             transform: `translate(${width}px, 20vh)`
           }}
-        ></button> */}
+        ></button>
         <div className="content">{children}</div>
       </div>
     </React.Fragment>

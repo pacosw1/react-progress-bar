@@ -1,0 +1,116 @@
+.Home {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: baseline;
+}
+.profile {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  /* align-items: center; */
+  border: 0px solid;
+  width: 100%;
+  /* background-color: rgba(241, 241, 241, 0.361); */
+  border-bottom: 0px solid;
+}
+
+.img-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-badge h1 {
+  /* font-size: 30px; */
+  align-items: center;
+  text-align: center;
+  font-family: Georgia;
+}
+
+.img-badge p {
+  font-size: 18px;
+  color: rgb(59, 59, 59);
+}
+.me {
+  border: 0px solid;
+  border-color: #c5aaaaf8;
+  z-index: 0;
+  border-radius: 50%;
+  /* transform: translate(100%, 0); */
+  height: 300px;
+  width: 300px;
+}
+
+.skills {
+  display: flex;
+  flex: 1 70%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: baseline;
+
+  /* flex-direction: column; */
+}
+
+.skill-sect h1 {
+  font-size: 25px;
+}
+.skill-sect p {
+  font-size: 22px;
+}
+
+.skill-sect {
+  display: flex;
+  width: fill;
+  border: 0px solid;
+  flex-direction: column;
+}
+.bio {
+  margin-top: 1rem;
+  width: 50%;
+  padding: 15px 0;
+  text-align: justify;
+}
+.bio p {
+  font-size: 22px;
+  color: black !important;
+
+  font-weight: 300;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  margin-left: 1.5rem;
+}
+.social-tab {
+  display: flex;
+  border: 0px solid;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.name-header {
+  display: flex;
+  margin-top: 1rem;
+  border: 0px solid;
+  justify-content: space-between;
+  width: 50%;
+  height: 50px;
+  align-items: baseline;
+}
+
+.social-tab h1 {
+  font-size: 20px;
+  color: rgb(97, 97, 97);
+  font-weight: 300;
+}
+
+.img-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

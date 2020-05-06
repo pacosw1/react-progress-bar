@@ -18,7 +18,7 @@ export const Validator = ({ test, setProgress }) => {
     <div className="validator">
       <ProgressBar
         width={300}
-        percent={(answered / total).toFixed(2)}
+        percent={(answered / total).toFixed(1)}
       ></ProgressBar>
     </div>
   );

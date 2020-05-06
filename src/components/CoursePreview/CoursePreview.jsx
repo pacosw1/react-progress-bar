@@ -3,6 +3,24 @@ import { Card } from "../Reusable/Card/Card";
 import { Button } from "../Reusable/Button/Button";
 import { ProgressBar } from "../Reusable/ProgressBar/ProgressBar";
 
+import "./Preview.css";
+
+export var CoursePreview = ({ title, description, progress }) => {
+  return (
+    <Card width={282} height={180} p>
+      <div className="preview">
+        <h1 className="title">{title}</h1>
+        <ProgressBar width={120} percent={progress} />
+
+        <div className="description">
+          <p>{description}</p>
+        </div>
+      </div>
+    </Card>
+  );
+};
+
+/* old one with lesson
 export var CoursePreview = ({ title, description, progress }) => {
   return (
     <Card width={280} height={150} p>
@@ -24,4 +42,4 @@ export var CoursePreview = ({ title, description, progress }) => {
       </div>
     </Card>
   );
-};
+}; */

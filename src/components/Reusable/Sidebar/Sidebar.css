@@ -1,22 +1,17 @@
 .side-bar {
-  height: 100%;
-  /* border-right: 1px solid; */
-
-  border-color: rgb(184, 184, 184);
-
-  background-color: rgb(255, 255, 255);
-  border-top-right-radius: 0.2rem;
-  transition: 0.8s ease;
-  z-index: 0;
+  height: 100% !important;
   display: flex;
-  height: 100%;
-  max-height: 87vh;
   flex-direction: column;
-  box-shadow: 3px -1px 12px 0 rgba(0, 0, 0, 0.07);
+
+  border-right: 1px solid;
+  border-radius: 0;
+
+  border-color: rgba(64, 194, 133, 0.693);
+  background-color: rgb(255, 255, 255);
+  transition: 0.8s ease;
 }
 
 .side-bar .content {
-  z-index: 0;
   overflow-y: scroll;
   scrollbar-width: 0 !important;
   scrollbar-color: white !important;
@@ -30,9 +25,9 @@
   transition: 0.8s ease;
   position: absolute;
   outline: none;
-  z-index: 1000;
-  border: 1px solid;
+  z-index: 1;
   border-color: rgb(197, 197, 197);
+  background-color: rgba(64, 194, 133, 0.693);
+  border-color: rgba(64, 194, 133, 0.693);
   border-left: 0;
-  background-color: none;
 }

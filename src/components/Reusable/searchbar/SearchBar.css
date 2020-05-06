@@ -1,0 +1,33 @@
+.search-div {
+  display: flex;
+}
+
+.search {
+  border-bottom: 1px solid;
+  border-radius: 0rem;
+  border-color: rgb(20, 206, 150);
+}
+
+.search-button {
+  width: 50px;
+  height: 20px;
+  /* border: 1px solid; */
+  border-radius: 0.3rem;
+}
+
+.searc-bar::placeholder {
+  border-color: rgb(20, 206, 150);
+}
+.search-bar {
+  width: 500px;
+  font-size: 17px;
+  margin: 0;
+  border: none;
+  height: 20px;
+  font-family: "Georgia";
+
+  box-shadow: none;
+  border-radius: 0.2rem;
+  text-shadow: none;
+  outline: none;
+}

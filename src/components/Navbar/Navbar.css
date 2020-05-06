@@ -1,32 +1,42 @@
 .navbar {
-  height: 50px;
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
   top: 0;
   justify-content: space-between;
-  /* box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05); */
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
   /* background-color: white !important; */
 }
 .navbar .logo {
-  font-size: 20px;
-  color: rgb(82, 82, 82);
+  font-size: 27px;
+  color: rgb(0, 0, 0);
+  font-family: "Georgia";
 }
 
 .nav-item {
-  font-size: 15px;
-  color: rgb(82, 82, 82);
+  font-size: 16px;
+  color: rgb(121, 121, 121);
+  font-weight: 400;
 }
 .navbar * {
   margin: 3px 10px;
+}
+.login {
+  color: rgb(38, 167, 100);
 }
 
 .left-side {
   display: flex;
   align-items: baseline;
 }
+
+.member {
+  color: rgb(136, 136, 136);
+}
 .right-side {
   display: flex;
+  align-items: center;
 }
 
 .navbar .sub-header {

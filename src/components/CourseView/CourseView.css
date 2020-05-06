@@ -1,14 +1,11 @@
 .course-view {
   display: flex;
+  flex-direction: column;
   border: 0px solid;
   flex: 1 100%;
-}
-
-.course-view div {
-  margin: 5px 10px;
-  border: 1px solid;
-  border-color: rgb(185, 185, 185);
-  border-radius: 0.4rem;
+  align-items: center;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  min-height: 120vh;
 }
 
 .updates {
@@ -19,4 +16,154 @@
 }
 .assigments {
   flex: 1 50%;
+}
+
+.course-tabs {
+  display: flex;
+}
+.course-tabs h1 {
+  margin: 0px 10px;
+  transition: 1s ease;
+  font-size: 30px;
+
+  margin-bottom: 40px;
+}
+.inactive-tab {
+  color: rgb(172, 172, 172);
+  border-bottom: none;
+  transition: 1s ease;
+
+  transform-origin: scale(1);
+}
+.active-tab {
+  transition: 1s ease;
+
+  transition: scale(1.06);
+
+  color: black;
+  border-bottom: 0px solid;
+}
+
+.course-intro p {
+  font-size: 22px;
+  text-align: justify;
+  font-weight: 300;
+}
+
+.course-intro {
+  border: 0px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 50%; */
+
+  width: 80%;
+}
+
+.course-intro h1 {
+  font-size: 50px;
+  align-self: flex-start;
+  font-family: "Georgia";
+}
+
+.course-overview {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  font-size: 20px;
+  padding: 20px;
+  flex: 1 100%;
+  margin-top: 40px;
+  border-radius: 0.4rem;
+  /* box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5); */
+}
+
+.course-overview h1 {
+  display: flex;
+  align-self: flex-start;
+}
+.chapter h1 {
+  font-size: 22px;
+}
+
+.list {
+  transition: 1s ease;
+  transition-delay: 0s;
+  overflow: hidden;
+
+  max-height: 300px;
+}
+
+.lesson-overview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0px dotted;
+  margin: 13px 0;
+}
+
+.lesson-overview h1 {
+  font-size: 15px;
+}
+.lesson-overview p {
+  font-size: 12x;
+  color: rgb(54, 54, 54);
+  font-weight: 300;
+}
+
+.reading-time {
+  font-size: 13px;
+}
+
+.chapter-h1 {
+  padding-bottom: 15px;
+}
+
+.side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.side * {
+  margin: 0px 10px;
+}
+
+.progress {
+  margin: 0;
+  transition-delay: 1s;
+  transition: 1s ease;
+}
+
+.course-btn {
+  transform: translate(0, 6px);
+}
+
+.menu {
+  border-bottom: 1px solid;
+  border-color: rgb(231, 231, 231);
+  display: flex;
+
+  margin: 0;
+}
+.indicator {
+  transform-origin: center;
+}
+
+.course-view .container {
+  display: flex;
+  margin: 0;
+  height: 50px;
+  justify-content: center;
+  border: 0px solid;
+  width: 50px !important;
+  align-items: center;
+}
+
+#icon-circle-down {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
