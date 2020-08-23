@@ -21,7 +21,7 @@ class Projects extends Component {
             status={"Completed"}
           />
           <Project
-            title={"Zombie Survival Game Multiplayer"}
+            title={"Multiplayer Top Down Shooter"}
             description={
               "Round based top down zombie survival shooter. Zombies get stronger and faster each round. How long can you survive?"
             }
@@ -41,7 +41,27 @@ class Projects extends Component {
             status={"Completed"}
           />
           <Project
-            title={"Zombie Survival Game"}
+            title={"Air Quality Chrome Extension"}
+            description={
+              "Round based top down zombie survival shooter. Zombies get stronger and faster each round. How long can you survive?"
+            }
+            stack={"Javascript\nTCanvas"}
+            challenges={"Physics and geometry review"}
+            percent={1}
+            status={"Completed"}
+          />
+          <Project
+            title={"Stock App"}
+            description={
+              "Round based top down zombie survival shooter. Zombies get stronger and faster each round. How long can you survive?"
+            }
+            stack={"Javascript\nTCanvas"}
+            challenges={"Physics and geometry review"}
+            percent={1}
+            status={"Completed"}
+          />
+          <Project
+            title={"Self Improvement / Habit builder App"}
             description={
               "Round based top down zombie survival shooter. Zombies get stronger and faster each round. How long can you survive?"
             }
