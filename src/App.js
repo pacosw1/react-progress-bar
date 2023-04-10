@@ -159,7 +159,7 @@ class App extends React.Component {
     Back End
       *API
       *Homework Check
-      *Lesson Prerquisites
+      *Lesson Prerequisites
       *Progress (based on homeworks);
       *Test checking (multiple choice) 
 
